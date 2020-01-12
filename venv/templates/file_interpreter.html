@@ -3,21 +3,22 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Home</title>
+    <title>File Interpreter</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     
 	<style type="text/css">
-    .toptext { 
+    .intro_title { 
         padding-top: 65px;
-        padding-left:375px;
+        padding-left:425px;
         padding-right:400px;
         text-align: center
-     }
-      .intro { 
-        padding-left:350px;
-        padding-right:425px;
+      }
+
+      .abt { 
+        padding-top: 65px;
 		text-align: center
 	  }
+
     </style>
 
 </head>
@@ -45,13 +46,26 @@
           </div>
         </nav>
 
-        <br><br>
-        <h2 class="toptext">Text Interpreter</h2>
-    <div class="intro" >
-        
-        <img src="https://pbs.twimg.com/media/EH0-PRPW4AA9c17?format=png&name=900x900" alt="Image">
-        <p>This tool processes text data, extracts keywords, and defines the keywords/provides links to give an overview of the text.'
-        It can be used to synthesize long articles, skim textbook pages, or summarize text when there is not enough time to read it.</p>
+  </br>
+  </br>
+    <div class="intro_title">
+        <h2>File Interpreter Tool</h2>
+      </br></br>
+
     </div>
+
+<div class="f">
+
+  <form id="myForm2" action="{{ url_for('process2') }}" method="POST">
+    <span style="padding-left: 600px;">Enter file URL: </span>
+          <input type="text" name="urltext" value="" ><br><br>
+      <span style="padding-left: 600px;"></span><input class="btn btn-primary btn-lg" title='In Firefox, alt+shift+P to click this' type="submit" accesskey="p" value="Process File" />
+    </form>
+</div>
+
+    
+  </br>
+   
+    
 </body>
 </html>

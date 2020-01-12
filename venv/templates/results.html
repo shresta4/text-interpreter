@@ -3,21 +3,27 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Home</title>
+    <title>Results</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     
 	<style type="text/css">
-    .toptext { 
+    .intro_title { 
         padding-top: 65px;
-        padding-left:375px;
+        padding-left:400px;
         padding-right:400px;
         text-align: center
-     }
-      .intro { 
-        padding-left:350px;
-        padding-right:425px;
+      }
+
+      .abt { 
+        padding-top: 65px;
 		text-align: center
 	  }
+
+    .f { 
+        padding-left: 200px;
+        padding-right: 200px;
+        white-space: pre-wrap;
+    }
     </style>
 
 </head>
@@ -36,7 +42,7 @@
               </li>
               
             <li class="nav-item">
-                <a class="nav-link" href="/text_interpreter">Text Interpreter</a>
+                <a class="nav-link" href="/results">Text Interpreter</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/file_interpreter">File Interpreter</a>
@@ -46,12 +52,14 @@
         </nav>
 
         <br><br>
-        <h2 class="toptext">Text Interpreter</h2>
-    <div class="intro" >
-        
-        <img src="https://pbs.twimg.com/media/EH0-PRPW4AA9c17?format=png&name=900x900" alt="Image">
-        <p>This tool processes text data, extracts keywords, and defines the keywords/provides links to give an overview of the text.'
-        It can be used to synthesize long articles, skim textbook pages, or summarize text when there is not enough time to read it.</p>
+    <div class="intro_title">
+        <h2>Keyword Report</h2>
+    </div>
+  </br>
+</br>
+    <div class="f">
+      <p>Keywords: {{keyword_results}}</p>
+      
     </div>
 </body>
 </html>
