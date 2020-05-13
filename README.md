@@ -11,6 +11,7 @@ Developed 10/26/2019 for the Code Ada hackathon.
  - spaCy for Keyword extraction (remove stopwords, POS tagging)
 2. SerpAPI to obtain json of word/definition/questions/links for each keyword 
 3. Flask, HTML/Css
+Some dependencies (listed above + additional ones) may need to be installed. 
 
 To run locally, clone the repo. Run the command ```export FLASK_APP=hello.py``` and ```flask run```. (```set``` instead of ```export``` if you're on a Windows machine.) 
 
