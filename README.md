@@ -12,5 +12,7 @@ Developed 10/26/2019 for the Code Ada hackathon.
 2. SerpAPI to obtain json of word/definition/questions/links for each keyword 
 3. Flask, HTML/Css
 
+To run locally, clone the repo. Run the command '''export FLASK_APP=hello.py''' and '''flask run'''. 
+
 #### Contributors
 Shresta Bangaru and Elena Zheng
